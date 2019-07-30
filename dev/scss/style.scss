@@ -16,14 +16,14 @@
 *******************************/
 @import "includes/bootstrap";
 
-/*******************************
-* scss partial files
-*******************************/
-
-
-
 /******************************
 * main scss file with gobal
 * styles
 ******************************/
 @import "main";
+
+/*******************************
+* scss partial files
+*******************************/
+@import "includes/header";
+@import "includes/homepage";

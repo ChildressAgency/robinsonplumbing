@@ -1,0 +1,63 @@
+#header{
+  border-bottom: 65px solid $brand-color;
+}
+#masthead{
+  background-color: $brand-color;
+  color: #fff;
+  padding-top:5px;
+  padding-bottom:5px;
+
+  .phone{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right:25px;
+    margin-bottom:0;
+    line-height: 1.4em;
+
+    a{
+      font-size: 20px;
+      color: #fff;
+      display:block;
+
+      &:hover,
+      &:focus{
+        color:#fff;
+      }
+    }
+  }
+
+  .quote-review{
+    color: #fff;
+    margin-bottom:0;
+
+    a{
+      color:#fff;
+
+      &:hover,
+      &:focus{
+        color:#fff;
+      }
+    }
+  }
+}
+
+#header-nav{
+  .navbar-toggler{
+    color: $brand-color;
+    border-color: $brand-color;
+  }
+
+  .navbar-nav{
+    .nav-link{
+      color: #4d4d4d;
+      text-transform: uppercase;
+      font-weight: $font-weight-bold;
+    }
+    .nav-link.active,
+    .nav-link:hover,
+    .nav-link:focus{
+      color: $brand-color;
+      text-decoration:none;
+    }
+  } 
+}
