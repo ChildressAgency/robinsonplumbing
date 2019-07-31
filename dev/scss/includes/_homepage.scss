@@ -92,3 +92,57 @@
     }
   }
 }
+
+#certifications{
+  padding-top:40px;
+  padding-bottom:40px;
+  text-align:center;
+
+  .cert-card{
+    margin-top: 40px;
+
+    h3{
+      font-size:20px;
+      font-weight: $font-weight-bold;
+      margin-top:20px;
+    }
+  }
+
+  .cert-img{
+    position:relative;
+
+    &::before{
+      content:"";
+      height:30px;
+      width:100%;
+      background-color: $brand-color-alt;
+      position:absolute;
+      top:50%;
+      left:0;
+      transform:skew(-16deg);
+    }
+  }
+}
+
+#hp-services{
+  border-top: 30px solid $brand-color-alt;
+  border-bottom: 30px solid $brand-color-alt;
+  background-image:url(images/lattice-pattern.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+  padding-top:40px;
+  padding-bottom:40px;
+
+  ul{
+    list-style-image:url(images/droplet.png);
+    
+    li{
+      font-size:20px;
+    }
+  }
+
+  .btn-main{
+    margin-top:40px;
+  }
+}

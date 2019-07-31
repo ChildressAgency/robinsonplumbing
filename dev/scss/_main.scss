@@ -120,3 +120,19 @@ a{
     width:250px;
   }
 }
+
+.img-skewed-small{
+  height:150px;
+  width:220px;
+  transform:skew(-16deg);
+  overflow:hidden;
+  box-shadow: 10px 10px 0 $brand-color;
+  margin-left:auto;
+  margin-right:auto;
+
+  &>img{
+    transform: skew(16deg);
+    margin-left:-13px;
+    width:119%;
+  }
+}
