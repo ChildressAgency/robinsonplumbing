@@ -12,6 +12,13 @@ h1{
   color: $brand-color-alt;
 }
 
+h2{
+  font-family: $font-family-alt;
+  font-weight: $font-weight-normal;
+  font-size: 28px;
+  color: $brand-color-alt;
+}
+
 a{
   transition: all .3s ease;
 }
@@ -91,4 +98,25 @@ a{
   background: -ms-linear-gradient(left, rgba(85,80,127,1) 0%, rgba(134,55,133,1) 31%, rgba(242,0,145,0.22) 100%);
   background: linear-gradient(to right, rgba(85,80,127,1) 0%, rgba(134,55,133,1) 31%, rgba(242,0,145,0.22) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55507f', endColorstr='#f20091', GradientType=1 );
+}
+
+.img-skewed{
+  height:300px;
+  width:500px;
+  transform:skew(-16deg);
+  overflow: hidden;
+  box-shadow: 18px 18px 0 $brand-color;
+  margin-left: auto;
+  margin-right:auto;
+
+  &>img{
+    transform: skew(16deg);
+    margin-left:-30px;
+    width:117%;
+  }
+
+  @include media-breakpoint-down(lg){
+    height:150px;
+    width:250px;
+  }
 }
