@@ -142,13 +142,14 @@
 
 #hp-coupons{
   padding-top:40px;
-  padding-bottom:80px;
+  padding-bottom:40px;
   text-align:center;
   background-color: $brand-color;
   border-top: 30px solid $brand-color-alt;
 
   .section-intro{
     color: #fff;
+    margin-bottom:40px;
 
     h2{
       color:#fff;

@@ -1,0 +1,41 @@
+#phone-numbers{
+  background-color: #f2f2f2;
+  padding-top:20px;
+  padding-bottom:20px;
+
+  .phone-location{
+    font-size:30px;
+    color: #000;
+    text-align:center;
+    text-transform:uppercase;
+    padding:25px;
+    border-right: 1px solid #000;
+
+    &:last-child{
+      border-right:none;
+    }
+
+    span{
+      font-family: $font-family-alt;
+      color: $brand-color-alt;
+      font-size:28px;
+      display:block;
+    }
+  }
+}
+
+#contact-form{
+  .container{
+    max-width:675px;
+  }
+
+  h3{
+    margin-top:20px;
+    color: $brand-color;
+  }
+}
+
+.form-control{
+  background-color: #f2f2f2;
+  border-radius:0;
+}
