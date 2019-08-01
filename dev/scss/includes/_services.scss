@@ -1,0 +1,29 @@
+#services-loop{
+  .service{
+    text-align:center;
+    color: #fff;
+    background-color: $brand-color-alt;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-family: $font-family-alt;
+    text-transform: uppercase;
+    width:44%;
+    padding:20px 15px;
+    background-image:url(images/fill-water.png);
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition:2.5s ease;
+
+    &:hover{
+      background-position:300% 100%;
+      text-decoration:none;
+    }
+
+    @include media-breakpoint-down(sm){
+      width:100%;
+    }
+  }
+}
