@@ -39,15 +39,9 @@
 }
 
 #service-areas{
-  background: rgba(85,80,127,1);
-  background: -moz-linear-gradient(left, rgba(85,80,127,1) 0%, rgba(242,0,145,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(85,80,127,1)), color-stop(100%, rgba(242,0,145,1)));
-  background: -webkit-linear-gradient(left, rgba(85,80,127,1) 0%, rgba(242,0,145,1) 100%);
-  background: -o-linear-gradient(left, rgba(85,80,127,1) 0%, rgba(242,0,145,1) 100%);
-  background: -ms-linear-gradient(left, rgba(85,80,127,1) 0%, rgba(242,0,145,1) 100%);
-  background: linear-gradient(to right, rgba(85,80,127,1) 0%, rgba(242,0,145,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55507f', endColorstr='#f20091', GradientType=1 );  position:relative;
   color: #fff;
+  padding-bottom:0;
+  padding-top:0;
 
   @include media-breakpoint-up(md){
     margin-top:200px;
@@ -126,7 +120,6 @@
 
 #hp-services{
   border-top: 30px solid $brand-color-alt;
-  border-bottom: 30px solid $brand-color-alt;
   background-image:url(images/lattice-pattern.png);
   background-repeat:no-repeat;
   background-size:cover;
@@ -152,6 +145,7 @@
   padding-bottom:80px;
   text-align:center;
   background-color: $brand-color;
+  border-top: 30px solid $brand-color-alt;
 
   .section-intro{
     color: #fff;
@@ -164,9 +158,9 @@
 
 #testimonials{
   background-color: $brand-color-alt;
-  padding-top: 40px;
   text-align: center;
   color:#fff;
+  padding-bottom:0;
 
   .cursive{
     color: #fff;
