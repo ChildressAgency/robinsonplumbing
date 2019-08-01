@@ -146,3 +146,62 @@
     margin-top:40px;
   }
 }
+
+#hp-coupons{
+  padding-top:40px;
+  padding-bottom:80px;
+  text-align:center;
+  background-color: $brand-color;
+
+  .section-intro{
+    color: #fff;
+
+    h2{
+      color:#fff;
+    }
+  }
+}
+
+#testimonials{
+  background-color: $brand-color-alt;
+  padding-top: 40px;
+  text-align: center;
+  color:#fff;
+
+  .cursive{
+    color: #fff;
+  }
+
+  .carousel-indicators{
+    bottom: -60px;
+
+    li{
+      height: 18px;
+      width: 18px;
+      transform: skew(-16deg);
+      background-color: #fff;
+      opacity: 1;
+
+      &.active,
+      &:hover{
+        background-color: $brand-color;
+      }
+
+      & + li{
+        margin-left:25px;
+      }
+    }
+  }
+  .carousel-inner{
+    margin-top:40px;
+  }
+
+  .speech-bubble{
+    width:100%;
+    height: auto;
+  }
+
+  .testimonial-author{
+    font-size:14px;
+  }
+}
