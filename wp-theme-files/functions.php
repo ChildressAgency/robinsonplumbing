@@ -130,3 +130,13 @@ function robinsonplumbing_header_fallback_menu(){ ?>
     </ul>
   </div>
 <?php }
+
+function robinsonplumbing_footer_fallback_menu(){ ?>
+  <ul id="footer-nav">
+    <li><a href="<?php echo esc_url(home_url()); ?>"><?php echo esc_html__('Home', 'robinsonplumbing'); ?></a></li>
+    <li><a href="<?php echo esc_url(home_url('about-us')); ?>"><?php echo esc_html__('About Us', 'robinsonplumbing'); ?></a></li>
+    <li><a href="<?php echo esc_url(home_url('coupons')); ?>"><?php echo esc_html__('Specials & Discounts', 'robinsonplumbing'); ?></a></li>
+    <li><a href="<?php echo esc_url(home_url('our-services')); ?>"><?php echo esc_html__('Our Services', 'robinsonplumbing'); ?></a></li>
+    <li><a href="<?php echo esc_url(home_url('contact-us')); ?>"><?php echo esc_html__('Contact Us', 'robinsonplumbing'); ?></a></li>
+  </ul>
+<?php }
