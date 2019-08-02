@@ -177,3 +177,42 @@ section{
   background-color:rgba(0,0,0,.5);
   z-index:1;
 }
+
+ul.droplets{
+  list-style-image:url(images/droplet.png);
+    
+  li{
+    font-size:20px;
+
+    a{
+      color:#000;
+
+      &:hover{
+        color:#000;
+      }
+    }
+  }
+}
+
+/* for printing coupons */
+@media screen{
+  #printSection{
+    display:none;
+  }
+}
+
+@media print{
+  body *{
+    visibility: hidden;
+  }
+  #printSection, #printSection *{
+    visibility: visible;
+  }
+  #printSection{
+    position:absolute;
+    left:0;
+    top:25px;
+    border:1px dashed #000;
+    padding: 15px;
+  }
+}
