@@ -16,7 +16,7 @@
         <div class="col-md-6">
           <h4><?php echo esc_html__('Proudly Serving:', 'robinsonplumbing'); ?></h4>
           <ul class="list-inline">
-            <?php while(have_rows('service_areas', 'option')): the_row(); ?>
+            <?php while(have_rows('services_areas', 'option')): the_row(); ?>
               <li><?php echo esc_html(get_sub_field('service_area')); ?></li>
             <?php endwhile; ?>
           </ul>
