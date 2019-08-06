@@ -39,3 +39,19 @@ function robinsonplumbing_load_textdomain(){
 require_once ROBINSONPLUMBING_PLUGIN_DIR . '/includes/robinsonplumbing-create-post-types.php';
 add_action('init', 'robinsonplumbing_create_post_types');
 
+add_action('acf/init', 'robinsonplumbing_register_blocks');
+function robinsonplumbing_register_blocks(){
+  if(function_exists('acf_register_block_type')){
+    acf_register_block_type(array(
+      'name' => 'image_carousel',
+      'title' => esc_html__('Image Carousel', 'robinsonplumbing'),
+      'description' => esc_html__('An image carousel for the Services pages.'),
+      'post_types' => array('services'),
+      'category' => 'formatting',
+      'mode' => 'auto',
+      'align' => 'full',
+      'render_template' => ROBINSONPLUMBING_PLUGIN_DIR . '/blocks/image_carousel.php',
+      'enqueue_style' => ROBINSONPLUMBING_PLUGIN_DIR . '/blocks/image_carousel.css'
+    ));
+  }
+}

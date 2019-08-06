@@ -1,0 +1,20 @@
+#service-carousel .carousel-inner{
+  margin-bottom:60px;
+}
+#service-carousel .carousel-indicators{
+  bottom:-60px;
+}
+#service-carousel .carousel-indicators li{
+  height:18px;
+  width:18px;
+  transform: skew(-16deg);
+  background-color:#e6e6e6;
+  opacity:1;
+}
+#service-carousel .carousel-indicatros li.active,
+#service-carousel .carousel-indicators li:hover{
+  background-color: #55507f;
+}
+#service-carousel .carousel-indicators li + li{
+  margin-left:25px;
+}
