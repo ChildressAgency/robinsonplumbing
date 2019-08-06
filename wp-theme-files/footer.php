@@ -29,7 +29,6 @@
     }
   }
 ?>
-  </main>
 
   <footer id="footer">
     <div id="footer-upper">
