@@ -27,20 +27,5 @@
     <div class="gradient-overlay"></div>
   </section>
 
-  <main id="main">
-    <section id="hp-about-us">
-      <div class="container">
-        <article class="entry-content">
-          <?php
-            if(have_posts()){
-              while(have_posts()){
-                the_post();
-                the_content();
-              }
-            }
-          ?>
-        </article>
-      </div>
-    </section>
-  </main>
+  <?php get_template_part('partials/content', 'main_section'); ?>
 <?php get_footer();

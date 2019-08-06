@@ -1,18 +1,6 @@
 <?php get_header(); ?>
-<main id="main">
-  <div class="container">
-    <article class="entry-content">
-      <?php 
-        if(have_posts()){
-          while(have_posts()){
-            the_post();
-            the_content();
-          }
-        }
-      ?>
-    </article>
-  </div>
-</main>
+
+<?php get_template_part('partials/content', 'main_section'); ?>
 
 <?php if(have_rows($coupons)): ?>
   <section id="coupons">
