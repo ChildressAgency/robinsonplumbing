@@ -26,4 +26,13 @@
   </section>
 <?php endif; ?>
 
+<section id="contact-form">
+  <div class="container">
+    <div class="contact-form">
+      <h2><?php echo esc_html__('GET A QUOTE', 'robinsonplumbing'); ?></h2>
+      <?php echo do_shortcode(get_field('contact_form_shortcode')); ?>
+    </div>
+  </div>
+</section>
+
 <?php get_footer();
