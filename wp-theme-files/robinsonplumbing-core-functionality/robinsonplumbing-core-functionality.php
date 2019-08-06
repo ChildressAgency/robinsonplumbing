@@ -58,6 +58,20 @@ function robinsonplumbing_acf_options_page(){
   ));
 }
 
+add_filter('block_categories', 'robinsonplumbing_custom_block_category', 10, 2);
+function robinsonplumbing_custom_block_category($categories, $post){
+  return array_merge(
+    $categories,
+    array(
+      array(
+        'slug' => 'custom-blocks',
+        'title' => esc_html__('Custom Blocks', 'robinsonplumbing'),
+        'icon' => 'wordpress'
+      )
+    )
+  );
+}
+
 add_action('acf/init', 'robinsonplumbing_register_blocks');
 function robinsonplumbing_register_blocks(){
   if(function_exists('acf_register_block_type')){
@@ -66,11 +80,33 @@ function robinsonplumbing_register_blocks(){
       'title' => esc_html__('Image Carousel', 'robinsonplumbing'),
       'description' => esc_html__('An image carousel for the Services pages.'),
       'post_types' => array('services'),
-      'category' => 'formatting',
-      'mode' => 'auto',
+      'category' => 'custom-blocks',
+      'mode' => 'edit',
       'align' => 'full',
       'render_template' => ROBINSONPLUMBING_PLUGIN_DIR . '/blocks/image_carousel.php',
       'enqueue_style' => ROBINSONPLUMBING_PLUGIN_DIR . '/blocks/image_carousel.css'
+    ));
+
+    acf_register_block_type(array(
+      'name' => 'skewed_image',
+      'title' => esc_html__('Skewed Image', 'robinsonplumbing'),
+      'description' => esc_html__('Show skewed image with shadow', 'robinsonplumbing'),
+      'category' => 'custom-blocks',
+      'mode' => 'auto',
+      'align' => 'full',
+      'render_template' => ROBINSONPLUMBING_PLUGIN_DIR . '/blocks/skewed_image.php',
+      'enqueue_style' => ROBINSONPLUMBING_PLUGIN_DIR . '/blocks/skewed_image.css'
+    ));
+
+    acf_register_block_type(array(
+      'name' => 'main_button',
+      'title' => esc_html__('Main Button Style', 'robinsonplumbing'),
+      'description' => esc_html__('Button with Main Styling', 'robinsonplumbing'),
+      'category' => 'custom-blocks',
+      'mode' => 'auto',
+      'align' => 'full',
+      'render_template' => ROBINSONPLUMBING_PLUGIN_DIR . '/blocks/main_button.php',
+      'enqueue_style' => ROBINSONPLUMBING_PLUGIN_DIR . '/blocks/main_button.css'
     ));
   }
 }
