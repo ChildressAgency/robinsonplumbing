@@ -13,7 +13,7 @@
     <section id="hp-coupons">
       <div class="container">
         <div class="section-intro">
-          <?php echo wp_kses_post(get_field('coupons_section_intro')); ?>
+          <?php echo wp_kses_post(get_field('coupons_section_intro', 'option')); ?>
         </div>
 
         <div class="coupons d-flex flex-wrap justify-content-around align-items-stretch">

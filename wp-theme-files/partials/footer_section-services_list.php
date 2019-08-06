@@ -16,7 +16,7 @@
     <section id="hp-services">
       <div class="container">
         <h2><?php echo esc_html__('Plumbing Services Include', 'robinsonplumbing'); ?></h2>
-        <ul>
+        <ul class="droplets">
           <?php while($services->have_posts()): $services->the_post(); ?>
             <li><a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a></li>
           <?php endwhile; wp_reset_postdata(); ?>

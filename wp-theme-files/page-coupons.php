@@ -2,11 +2,11 @@
 
 <?php get_template_part('partials/content', 'main_section'); ?>
 
-<?php if(have_rows($coupons)): ?>
+<?php if(have_rows('coupons')): ?>
   <section id="coupons">
     <div class="container">
       <div class="coupons d-flex flex-wrap justify-content-around align-items-stretch">
-        <?php while(have_rows($coupons)): the_row(); ?>
+        <?php while(have_rows('coupons')): the_row(); ?>
 
           <?php get_template_part('partials/loop_item', 'coupon'); ?>
           

@@ -48,6 +48,14 @@ function robinsonplumbing_acf_options_page(){
     'capability' => 'edit_posts',
     'redirect' => false
   ));
+
+  acf_add_options_page(array(
+    'page_title' => esc_html__('Footer Sections Settings', 'robinsonplumbing'),
+    'menu_title' => esc_html__('Footer Sections Settings', 'robinsonplumbing'),
+    'menu_slug' => 'footer-sections-settings',
+    'capability' => 'edit_posts',
+    'redirect' => false
+  ));
 }
 
 add_action('acf/init', 'robinsonplumbing_register_blocks');

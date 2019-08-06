@@ -6,7 +6,7 @@
       $section_type = get_row_layout();
 
       switch($section_type){
-        case 'callnow-button':
+        case 'callnow_button':
           get_template_part('partials/footer_section', 'callnow_button');
           break;
           
