@@ -56,7 +56,7 @@
             'depth' => 2,
             'walker' => new WP_Bootstrap_NavWalker()
           );
-          wo_nav_menu($header_nav_args);
+          wp_nav_menu($header_nav_args);
         ?>
         
       </div>
