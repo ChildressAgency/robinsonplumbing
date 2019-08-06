@@ -17,7 +17,8 @@
               <div class="cert-card">
                 <div class="cert-img">
                   <div class="img-skewed-small">
-                    <img src="<?php echo esc_url(get_sub_field('certification_image')); ?>" class="" alt="" />
+                    <?php $certification_image = get_sub_field('certification_image'); ?>
+                    <img src="<?php echo esc_url($certification_image['url']); ?>" class="" alt="<?php echo esc_attr($certification_image['alt']); ?>" />
                   </div>
                 </div>
                 <h3><?php echo esc_html(get_sub_field('certification')); ?></h3>
