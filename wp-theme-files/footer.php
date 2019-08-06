@@ -68,6 +68,7 @@
                 $facebook = get_field('facebook', 'option');
                 $twitter = get_field('twitter', 'option');
                 $instagram = get_field('instagram', 'option');
+                $yelp = get_field('yelp', 'option');
 
                 if($facebook): ?>
                   <a href="<?php echo esc_url($facebook); ?>" target="_blank"><i class="fab fa-facebook"></i><span class="sr-only">Facebook</span></a>
@@ -75,6 +76,8 @@
                 <a href="<?php echo esc_url($twitter); ?>" target="_blank"><i class="fab fa-twitter"></i><span class="sr-only">Twitter</span></a>
               <?php endif; if($instagram): ?>
                 <a href="<?php echo esc_url($instagram); ?>" target="_blank"><i class="fab fa-instagram"></i><span class="sr-only">Instagram</span></a>
+              <?php endif; if($yelp): ?>
+                <a href="<?php echo esc_url($yelp); ?>" target="_blank"><i class="fab fa-yelp"></i><span class="sr-only">Yelp</span></a>
               <?php endif; ?>
             </div>
             <h4 class="mt-4"><?php echo esc_html__('For Emergencies Call', 'robinsonplumbing'); ?></h4>
