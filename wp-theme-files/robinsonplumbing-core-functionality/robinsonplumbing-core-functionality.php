@@ -39,6 +39,17 @@ function robinsonplumbing_load_textdomain(){
 require_once ROBINSONPLUMBING_PLUGIN_DIR . '/includes/robinsonplumbing-create-post-types.php';
 add_action('init', 'robinsonplumbing_create_post_types');
 
+add_action('acf/init', 'robinsonplumbing_acf_options_page');
+function robinsonplumbing_acf_options_page(){
+  acf_add_options_page(array(
+    'page_title' => esc_html__('General Settings', 'robinsonplumbing'),
+    'menu_title' => esc_html__('General Settings', 'robinsonplumbing'),
+    'menu_slug' => 'general-settings',
+    'capability' => 'edit_posts',
+    'redirect' => false
+  ));
+}
+
 add_action('acf/init', 'robinsonplumbing_register_blocks');
 function robinsonplumbing_register_blocks(){
   if(function_exists('acf_register_block_type')){
