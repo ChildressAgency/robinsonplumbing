@@ -159,26 +159,6 @@
     color: #fff;
   }
 
-  .carousel-indicators{
-    bottom: -60px;
-
-    li{
-      height: 18px;
-      width: 18px;
-      transform: skew(-16deg);
-      background-color: #fff;
-      opacity: 1;
-
-      &.active,
-      &:hover{
-        background-color: $brand-color;
-      }
-
-      & + li{
-        margin-left:25px;
-      }
-    }
-  }
   .carousel-inner{
     margin-top:40px;
   }
@@ -190,5 +170,43 @@
 
   .testimonial-author{
     font-size:14px;
+  }
+}
+
+.carousel-indicators{
+  bottom: -60px;
+
+  li{
+    height: 18px;
+    width: 18px;
+    transform: skew(-16deg);
+    background-color: #fff;
+    opacity: 1;
+
+    &.active,
+    &:hover{
+      background-color: $brand-color;
+    }
+
+    & + li{
+      margin-left:25px;
+    }
+  }
+}
+
+#service-carousel{
+  .carousel-inner{
+    margin-bottom:60px;
+  }
+
+  .carousel-indicators{
+    li{
+      background-color:#e6e6e6;
+
+      &.active,
+      &:hover{
+        background-color: $brand-color;
+      }
+    }
   }
 }
