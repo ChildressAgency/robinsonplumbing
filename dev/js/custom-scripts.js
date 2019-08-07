@@ -9,6 +9,15 @@ jQuery(document).ready(function($){
     printCoupon($coupon);
     window.print();
   });
+
+  //age of home slider
+  var slider = $('#age-of-home');
+  var output = $('#home-age');
+  $(output).html(slider.val());
+
+  $(slider).on('input', function(){
+    $(output).html($(this).val());
+  });
 });
 
 $.fn.carouselHeights = function () {
