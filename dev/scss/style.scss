@@ -1,0 +1,33 @@
+/*!
+  Theme Name: Robinson Plumbing
+  Theme Author: The Childress Agency
+  Theme Autor URI: https://childressagency.com
+  Version: 1.0
+*/
+
+/********************************
+* custom variables and bootstrap
+* variable overrides
+********************************/
+@import "variables";
+
+/*******************************
+* bootstrap scss files
+*******************************/
+@import "includes/bootstrap";
+
+/******************************
+* main scss file with gobal
+* styles
+******************************/
+@import "main";
+
+/*******************************
+* scss partial files
+*******************************/
+@import "includes/header";
+@import "includes/homepage";
+@import "includes/coupons";
+@import "includes/footer";
+@import "includes/contact";
+@import "includes/services";

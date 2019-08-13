@@ -1,0 +1,19 @@
+.btn-main{
+  display:inline-block;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #f20090;
+  padding:2px 25px 3px;
+  border-radius: 25px;
+  font-weight: 700;
+  border:none;
+}
+
+.btn-main:hover,
+.btn-main:focus{
+  text-decoration: none;
+   background-color: #55507f;
+   color: #fff;
+}

@@ -1,0 +1,75 @@
+<div class="form-group">
+  <label for="fname" class="sr-only">First Name*</label>
+  [text* fname id:fname class:form-control placeholder "*First Name"]
+</div>
+<div class="form-group">
+  <label for="lname" class="sr-only">Last Name*</label>
+  [text* lname id:lname class:form-control placeholder "*Last Name"]
+</div>
+<div class="form-group">
+  <label for="your-email" class="sr-only">Email*</label>
+  [email* your-email id:your-email class:form-control placeholder "*Email"]
+</div>
+<div class="form-group">
+  <label for="phone" class="sr-only">Phone Number*</label>
+  [text* phone id:phone class:form-control placeholder "*Phone Number"]
+</div>
+<div class="form-group">
+  <label for="zip" class="sr-only">Zip Code*</label>
+  [text* zip id:zip class:form-control placeholder "*Zip Code"]
+</div>
+<h3 class="cursive">Services Needed</h3>
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-check">
+      [checkbox services id:service1 class:form-check-input use_label_element "Residential Plumbing"]
+    </div>
+    <div class="form-check">
+      [checkbox services id:service2 class:form-check-input use_label_element "Plumbing Repair"]
+    </div>
+    <div class="form-check">
+      [checkbox services id:service3 class:form-check-input use_label_element "Tankless Water Heaters"]
+    </div>
+    <div class="form-check">
+      [checkbox services id:service4 class:form-check-input use_label_element "Water Main Repair"]
+    </div>
+    <div class="form-check">
+      [checkbox services id:service5 class:form-check-input use_label_element "Garbage Disposal"]
+    </div>
+    <div class="form-check">
+      [checkbox services id:service6 class:form-check-input use_label_element "Outdoor Faucet Installation"]
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-check">
+      [checkbox services id:service7 class:form-check-input use_label_element "Commercial Plumbing"]
+    </div>
+    <div class="form-check">
+      [checkbox services id:service8 class:form-check-input use_label_element "Water Heater Repair & Installation"]
+    </div>
+    <div class="form-check">
+      [checkbox services id:service9 class:form-check-input use_label_element "Backflow Prevention"]
+    </div>
+    <div class="form-check">
+      [checkbox services id:service10 class:form-check-input use_label_element "Well Pump Repairs"]
+    </div>
+    <div class="form-check">
+      [checkbox services id:service11 class:form-check-input use_label_element "Sewer Pump Repair & Installation"]
+    </div>
+  </div>
+</div>
+<h3 class="cursive">Age of Home</h3>
+<div class="form-group">
+  <label for="age-of-home" class="sr-only">Age of Home</label>
+  [range age-of-home min:1900 max:2019 id:age-of-home class:custom-range "2000"]
+  <span id="home-age"></span>
+</div>
+<div class="form-group">
+  <label for="notes" class="sr-only">Additional Notes</label>
+  [textarea notes x6 id:notes class:form-control placeholder "Additional Notes"]
+</div>
+<div class="form-group">
+  <p class="text-right">
+    [submit class:btn-main "Submit"]
+  </p>
+</div>

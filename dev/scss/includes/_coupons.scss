@@ -1,0 +1,78 @@
+#coupons{
+  text-align:center;
+}
+.coupon{
+  position:relative;
+  display: block;
+  width: 280px;
+  margin-bottom: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  @media print{
+    text-align:center;
+    text-decoration: none !important;
+  }
+
+  &:hover,
+  &:focus{
+    text-decoration:none;
+  }
+
+  .coupon-body{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 3;
+    color:#fff;
+    padding:10px;
+
+    @media print{
+      color: #000;
+    }
+
+    h4{
+      font-size:20px;
+      font-weight: $font-weight-bold;
+    }
+
+    .coupon-price{
+      font-size:40px;
+      font-weight: $font-weight-black;
+    }
+
+    p{
+      margin-bottom:0;
+    }
+  }
+
+  .coupon-footer{
+    background-color: $brand-color-alt;
+    color: #fff;
+    padding-top:5px;
+    padding-bottom:5px;
+
+    @media print{
+      display:none
+    }
+
+    p{
+      margin-bottom:0;
+      font-size:20px;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+    }
+  }
+
+  .coupon-print-footer{
+    display:none;
+    color: #666;
+
+    @media print{
+      display:block !important;
+    }
+  }
+}
