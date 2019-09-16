@@ -22,7 +22,7 @@
           <?php endwhile; wp_reset_postdata(); ?>
         </ul>
         <p class="text-center">
-          <a href="<?php echo esc_url(home_url('services')); ?>" class="btn-main"><?php echo esc_html__('Services', 'robinsonplumbing'); ?></a>
+          <a href="<?php echo esc_url(home_url('our-services')); ?>" class="btn-main"><?php echo esc_html__('Services', 'robinsonplumbing'); ?></a>
         </p>
       </div>
     </section>
