@@ -5,7 +5,7 @@
     $coupon_img_url = $coupon_img['url'];
   }
 ?>
-<a href="#" class="coupon" style="background-image:url(<?php echo esc_url($coupon_img_url); ?>);">
+<a href="#" id="<?php echo esc_attr(get_sub_field('coupon_title')); ?>" class="coupon" style="background-image:url(<?php echo esc_url($coupon_img_url); ?>);">
   <div class="coupon-body d-flex flex-column justify-content-center">
     <h4><?php echo esc_html(get_sub_field('coupon_title')); ?></h4>
     <span class="coupon-price"><?php echo esc_html(get_sub_field('coupon_value')); ?></span>
